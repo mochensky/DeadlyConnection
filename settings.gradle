@@ -1,0 +1,19 @@
+pluginManagement {
+    repositories {
+        maven {
+            name = 'Fabric'
+            url = 'https://maven.fabricmc.net/'
+        }
+        gradlePluginPortal()
+    }
+}
+
+rootProject.name = 'deadlyconnection'
+include 'mc1_17_x'
+include 'mc1_18_x'
+include 'mc1_19_x'
+include 'mc1_20-1_20_4'
+include 'mc1_20_5-1_20_6'
+include 'mc1_21-1_21_1'
+include 'mc1_21_2-1_21_5'
+include 'mc1_21_6-1_21_7'
