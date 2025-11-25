@@ -7,15 +7,7 @@
 - **Linked Fates**: One player's death triggers instant death for all players in the world.
 - **Ultimate Teamwork**: Forces coordination and strategy — every player's survival matters!
 - **Vanilla-Friendly**: Works seamlessly with vanilla Minecraft and most mods.
-- **Lightweight & Simple**: Easy to install, no complex setup needed.
 - **Server-Side**: Only the server (or the player hosting the world) needs the mod installed—perfect for multiplayer mayhem!
-
-## Installation
-
-1. Download the latest version of **DeadlyConnection**.
-2. Install **Fabric** and **[Fabric API](https://modrinth.com/project/P7dR8mSH)** (depending on your version).
-3. Drop the mod `.jar` file into your `mods` folder.
-4. Launch Minecraft!
 
 ## Why Play DeadlyConnection?
 
