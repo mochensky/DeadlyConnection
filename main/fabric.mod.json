@@ -5,8 +5,8 @@
   "name": "DeadlyConnection",
   "description": "As soon as someone in the world dies, all other players die too!",
   "authors": ["mochensky"],
-  "contact": { "homepage": "https://github.com/mochensky" },
-  "license": "All-Rights-Reserved",
+  "contact": { "homepage": "https://github.com/mochensky", "issues": "https://github.com/mochensky/DeadlyConnection/issues"},
+  "license": "CC-BY-NC-SA-4.0",
   "icon": "assets/deadlyconnection/icon.png",
   "environment": "*",
   "entrypoints": {
