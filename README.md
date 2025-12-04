@@ -12,9 +12,3 @@
 ## Why Play DeadlyConnection?
 
 This mod is perfect for players who love a brutal, cooperative challenge. Whether you're a group of friends testing your teamwork or a hardcore survivalist looking to raise the stakes, **DeadlyConnection** makes every moment tense and thrilling. Can you beat the game when one death spells doom for all?
-
-## Compatibility
-
-- Works with Minecraft `1.17–1.21.x`!
-- Compatible with most Fabric mods.
-- No client-side installation needed for multiplayer servers.
