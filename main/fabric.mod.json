@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "deadlyconnection",
   "version": "${version}",
-  "name": "DeadlyConnection",
+  "name": "Deadly Connection",
   "description": "As soon as someone in the world dies, all other players die too!",
   "authors": ["mochensky"],
   "contact": { "homepage": "https://github.com/mochensky", "issues": "https://github.com/mochensky/DeadlyConnection/issues", "sources": "https://github.com/mochensky/DeadlyConnection" },
