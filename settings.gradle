@@ -9,6 +9,7 @@ pluginManagement {
 }
 
 rootProject.name = 'deadlyconnection'
+include 'mc1_16_5'
 include 'mc1_17_x'
 include 'mc1_18_x'
 include 'mc1_19_x'
@@ -18,3 +19,4 @@ include 'mc1_21-1_21_1'
 include 'mc1_21_2-1_21_5'
 include 'mc1_21_6-1_21_8'
 include 'mc1_21_9-1_21_11'
+include 'mc26_1_x'

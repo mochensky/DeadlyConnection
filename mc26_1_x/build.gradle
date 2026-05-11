@@ -1,5 +1,5 @@
 plugins {
-    id 'net.fabricmc.fabric-loom-remap'
+    id 'net.fabricmc.fabric-loom'
 }
 
 sourceSets {
@@ -13,44 +13,47 @@ sourceSets {
     }
 }
 
-def version_suffix = '1.17.x'
+def version_suffix = '26.1.x'
 
 dependencies {
-    minecraft "com.mojang:minecraft:1.17"
-    mappings "net.fabricmc:yarn:1.17+build.13:v2"
-    modImplementation "net.fabricmc:fabric-loader:0.16.10"
-    modImplementation "net.fabricmc.fabric-api:fabric-api:0.36.0+1.17"
+    minecraft "com.mojang:minecraft:26.1"
+
+    implementation "net.fabricmc:fabric-loader:0.19.2"
+    implementation "net.fabricmc.fabric-api:fabric-api:0.145.1+26.1"
 }
 
 processResources {
     inputs.property 'version', project.version
-    inputs.property 'loader_version', '0.16.10'
-    inputs.property 'minecraft_version_range', '>=1.17 <1.18'
+    inputs.property 'loader_version', '0.19.2'
+    inputs.property 'minecraft_version_range', '>=26.1 <26.2'
+
     filteringCharset 'UTF-8'
 
     filesMatching('fabric.mod.json') {
-        expand 'version': project.version,
-                'loader_version': '0.16.10',
-                'minecraft_version_range': '>=1.17 <1.18'
+        expand(
+                version: project.version,
+                loader_version: '0.19.2',
+                minecraft_version_range: '>=26.1 <26.2'
+        )
     }
 
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
 
 tasks.withType(JavaCompile).configureEach {
-    options.release.set(17)
+    options.release.set(25)
 }
 
 tasks.named('sourcesJar') {
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
 
-remapJar {
+jar {
     archiveVersion = "${project.version}-mc${version_suffix}"
     destinationDirectory = file("${project.rootDir}/build/libs")
 }
 
-remapSourcesJar {
+sourcesJar {
     archiveVersion = "${project.version}-mc${version_suffix}"
     destinationDirectory = file("${project.rootDir}/build/libs")
 }
